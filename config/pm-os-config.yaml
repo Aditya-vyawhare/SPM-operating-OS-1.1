@@ -1,0 +1,124 @@
+# PM Operating System — Configuration
+# Personalized for: (your name)
+
+# --- Part 1: Identity & Role ---
+identity:
+  role: "Senior PM"
+  product: "(Your Product Name)"
+  product_type: "growth"
+  company: "(Your Company)"
+
+# --- Part 2: Stakeholders ---
+stakeholders:
+  managers: ["(update with your manager)"]
+  vip_senders: ["(update with VIP names/handles)"]
+  org_structure: "(update: e.g., I report to Sarah, VP of Product)"
+
+# --- Part 3: Goals (top 2-3) ---
+goals:
+  - name: "(Goal 1 — update)"
+    metric: "(target metric)"
+    focus: "(focus areas)"
+  - name: "(Goal 2 — update)"
+    metric: "(target metric)"
+    focus: "(focus areas)"
+
+# --- Part 4: Deprioritization ---
+deprioritize:
+  low_priority: ["(update: things to push to backlog)"]
+  never_prioritize: ["(update: things to delegate or ignore)"]
+
+# --- Part 5: Tools ---
+tools:
+  # Communication & Collaboration
+  slack: true
+  gmail: false
+  microsoft_teams: false
+  # Documents & Knowledge
+  google_drive: true
+  notion: false
+  confluence: false
+  # Project Management
+  jira: false
+  linear: false
+  asana: false
+  github: false
+  # Design
+  figma: false
+  # Browser
+  browser: true
+  # Data & Analytics
+  databricks: false
+  snowflake: false
+  postgresql: false
+  amplitude: false
+  mixpanel: false
+  # CRM & Customer
+  salesforce: false
+  hubspot: false
+  zendesk: false
+  intercom: false
+
+# --- Part 6: Slack ---
+slack:
+  feedback_channel: "#(update-your-feedback-channel)"
+  feedback_channel_id: ""
+  dm_recipient_id: ""
+
+# --- Part 7: Google Drive ---
+google_drive:
+  monday_planning_doc_id: ""
+  daily_standup_doc_id: ""
+  pmo_sheet_url: ""
+
+# --- Part 8: Domain Context ---
+domain:
+  name: "(Your Product Name)"
+  knowledge_folder: "(your-product-name)"
+  customer_segments: ["(Segment 1)", "(Segment 2)", "(Segment 3)"]
+  key_metrics: ["(Metric 1)", "(Metric 2)", "(Metric 3)"]
+  competitors: ["(Competitor 1)", "(Competitor 2)", "(Competitor 3)"]
+  strategic_pillars: ["(Pillar 1)", "(Pillar 2)", "(Pillar 3)"]
+  product_principles: ["(Principle 1)", "(Principle 2)", "(Principle 3)"]
+  strategic_framing:
+    - "Connect all work to strategic pillars and quarterly goals"
+    - "Frame problems from the customer's perspective first"
+    - "Every feature should have a hypothesis and experiment plan"
+    - "Lead with customer impact, then business impact"
+  knowledge_docs: ["strategy.md", "customer-segments.md", "competitive-landscape.md"]
+  strategy_doc_url: ""
+
+# --- Part 9: Skills to include ---
+skills:
+  prd_writer: true
+  working_backwards: true
+  action_item_prioritizer: true
+  pptx_creator: true
+  brainstorming: true
+  writing_clearly: true
+  strategy_connector: true
+  exec_communicator: true
+  experiment_designer: true
+  launch_readiness: true
+  launch_post: true
+  one_pager: true
+  stakeholder_update: true
+  meeting_to_actions: true
+  experiment_writeup: true
+  # Context graph skills
+  decision_logger: true
+  what_if: true
+  knowledge_updater: true
+  continual_learning: true
+
+# --- Part 10: Agents to include ---
+agents:
+  feedback_analyzer: true
+  weekly_planner: true
+  strategy_reviewer: true
+  exec_update_generator: true
+  # Context graph agents
+  retrospective: true
+
+# --- Part 11: PRD template ---
+prd_template: "generic"

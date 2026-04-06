@@ -1,0 +1,8 @@
+.env
+.venv/
+.gdrive_token.json
+credentials.json
+scheduler.log
+scheduler-stdout.log
+scheduler-stderr.log
+__pycache__/

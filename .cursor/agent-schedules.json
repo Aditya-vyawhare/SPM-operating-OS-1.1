@@ -1,0 +1,47 @@
+{
+  "schedules": [
+    {
+      "id": "planday-weekdays",
+      "name": "Planday (weekdays)",
+      "enabled": true,
+      "cron": "30 8 * * 1-5",
+      "targetType": "prompt",
+      "promptTemplate": "/planday",
+      "executionMode": "ide",
+      "outputConfig": { "type": "none" },
+      "metadata": {
+        "timezoneNote": "Mon-Fri 8:30 AM local. Uses machine timezone.",
+        "description": "Morning planning — reads weekly goals, Slack, builds priorities."
+      }
+    },
+    {
+      "id": "slack-sync-daily",
+      "name": "Slack sync (daily)",
+      "enabled": true,
+      "cron": "58 16 * * *",
+      "targetType": "prompt",
+      "promptTemplate": "/slack-sync",
+      "executionMode": "ide",
+      "outputConfig": { "type": "none" },
+      "metadata": {
+        "timezoneNote": "Daily 4:58 PM local. 24h cooldown prevents duplicate runs.",
+        "description": "Sync strategic Slack content to project knowledge files."
+      }
+    },
+    {
+      "id": "program-update-weekdays",
+      "name": "Program update (weekdays)",
+      "enabled": true,
+      "cron": "0 17 * * 1-5",
+      "targetType": "prompt",
+      "promptTemplate": "/program-update",
+      "executionMode": "ide",
+      "outputConfig": { "type": "none" },
+      "metadata": {
+        "timezoneNote": "Mon-Fri 5:00 PM local.",
+        "description": "EOD status across workstreams — Slack DM + log."
+      }
+    }
+  ],
+  "version": "1.0"
+}
