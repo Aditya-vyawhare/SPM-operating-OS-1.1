@@ -1,0 +1,24 @@
+# MCP config — contains API keys
+.cursor/mcp.json
+
+# User-specific rules (generated during onboarding)
+.cursor/rules/
+
+# Hook state (local)
+.cursor/hooks/
+
+# OS files
+.DS_Store
+
+# Editor
+*.swp
+*.swo
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+
+# Drafts (local workspace)
+workspace/drafts/*
+!workspace/drafts/.gitkeep
