@@ -2,24 +2,51 @@
 # This file is written by the onboarding agent or edited manually.
 
 identity:
-  role: ""
-  company: ""
-  product: ""
-  product_type: ""  # 0-1 / growth / platform / other
+  role: "Senior Product Manager - T&E"
+  company: "Dice"
+  product: "Corporate Travel Platform"
+  product_type: "growth"
 
 stakeholders:
-  manager: ""
-  vips: []
-  org_structure: ""
+  manager: "Head of Product"
+  vips:
+    - "CFO"
+    - "COO"
+    - "VP Supply"
+    - "VP Engineering"
+  org_structure: "Product, Engineering, Supply, Finance Operations, Customer Support"
 
-goals: []
-  # - name: ""
-  #   metric: ""
-  #   focus: ""
+goals:
+  - name: "Increase quarterly GMV"
+    metric: "GMV"
+    focus: "Conversion, AOV, and repeat rate improvements"
+  - name: "Reduce revenue leakage"
+    metric: "Leakage as % of gross bookings"
+    focus: "Fare mismatch, refund, tax, and ancillary reconciliation"
+  - name: "Improve monetization quality"
+    metric: "Take rate"
+    focus: "Commission capture, markups, and service fee realization"
 
-deprioritize: []
+deprioritize:
+  - "Feature requests without measurable GMV or margin impact"
+  - "Long-cycle platform projects with no near-term monetization path"
 
 tools:
-  figma: false
-  google_drive: false
-  jira: false
+  figma: true
+  google_drive: true
+  jira: true
+
+operating_defaults:
+  north_star_metric: "GMV"
+  daily_bookings_baseline: 800
+  required_response_sections:
+    - "GMV impact"
+    - "Effort vs ROI"
+    - "Trade-offs and risk"
+    - "Execution plan"
+  prioritization_framework:
+    - "GMV upside"
+    - "time-to-impact"
+    - "implementation effort"
+    - "risk/compliance"
+    - "measurement confidence"
